@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	width: 1024px;
+	height: 2000px;
+	background: green;
+	position: relative;
+}
+.container .head{
+	width: 100%;
+	height: 100px;
+	background: green;
+	position: relative;
+}
+.container .head .logo{
+	width: 15%;
+	height: 100px;
+}
+.container .head .logo img{
+	width: 100%;
+	height: 100%;
+}
+.container .head .box1{
+	width: 83%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.container .head .box1 .dc{
+	width: 90%;
+	height: 45px;
+	position: absolute;
+	right: 0;
+}
+.container .head .box1 .dc ul{
+	width: 100%;
+	height: 45px;
+	list-style: none;
+	text-align: center;
+}
+.container .head .box1 .dc ul li{
+	float: left;
+	width: auto;
+	height: 45px;
+	margin-right: 10px;
+}
+.container .head .box1 .dc ul li img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+}
+.container .head .box1 .dc ul li a{
+	color: pink;
+	font-size: 14px;
+	line-height: 45px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.container .head .box1 .dc ul li a:hover{
+	color: white;
+}
+.container .head .box1 .dc ul li.co img{
+	width: 30px;
+	position: absolute;
+	right: 20px;
+}
+.container .head .box1 .menu{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+}
+.container .head .box1 .menu ul{
+	list-style: none;
+	text-align: center;
+}
+.container .head .box1 .menu ul li{
+	display: block;
+	float: left;
+	width: auto;
+	height: 50px;
+	margin-right: 20px;
+}
+.container .head .box1 .menu ul li a{
+	color: white;
+	font-size: 18px;
+	line-height: 50px;
+	text-decoration: none;
+}
+.container .head .box1 .menu img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+.container .head .box1 .menu ul li.home{
+	display: block;
+	width: 60px;
+	height: 50px;
+	background: #ffad33;
+}
+.container .head .box1 .menu ul li a:hover{
+	color: red;
+}
+.container .pic{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.container .pic img{
+	width: 100%;
+	height: 100%;
+}
+.container .pic .text1{
+	width: 100%;
+	height: 100px;
+	background: rgba(51,0,0,0.4);
+	position: absolute;
+	bottom: 2px;
+}
+.container .pic .text1 h6{
+	display: block;
+	width: 80%;
+	color: #ffa31a;
+	font-size: 18px;
+	line-height: 25px;
+}
+.container .pic .text1 p{
+	display: block;
+	width: 90%;
+	color: white;
+	font-size: 16px;
+	line-height: 20px;
+}
+.container .pic ul li{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #ffa31a;
+}
+.container .pic .text1 li.next {
+	position: absolute;
+	bottom: 55px;
+	right: 0;
+	background-image: url('../git/pic/next.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: left 10px top 5px;
+}
+.container .pic .text1 li.back {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	background-image: url('../git/pic/next.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: left 10px top 5px;
+	transform: rotate(180deg);
+}
+.container .content{
+	width: 100%;
+	position: relative;
+}
+.container .content h4{
+	display: block;
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+.container .content .pi{
+	width: 49%;
+	height: 300px;
+	z-index: 0;
+}
+.container .content .pi img{
+	width: 100%;
+	height: 100%;
+	transition-timing-function: ease-in-out;
+	transition-duration: 5s;
+}
+.container .content .pi p{
+	display: none;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	width: 300px;
+	height: 40px;
+	background: rgba(255, 153, 0,0.5);
+	position: absolute;
+	top: 120px;
+	left: 100px;
+}
+.container .content .pi:hover  p{
+	display: block;	
+}
+.container .content .pi:hover{
+	z-index: 50;
+}
+.container .content .pic1{
+	position: absolute;
+	left: 0;
+}
+.container .content .pic1 img:hover{
+	transform: scale(2.04,2.07) translate(128px,77px);
+}
+.container .content .pic1 p{
+	animation-duration: 10s;
+	animation-name: example;
+}
+@keyframes example {
+     0%   {background-color:red; left:100px; top: 120px;}
+    25%  {background-color:yellow; left:0px; top:120px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:100px; top:0px;}
+    100% {background-color:red; left:100px; top:120px;}
+}
+.container .content .pic2{
+	position: absolute;
+	right: 0;
+}
+.container .content .pic2 img:hover{
+	transition-duration: 5s;
+	transform: scale(2.04,2.07) translate(-128px,77px);
+}
+.container .content .pic2 p{
+	animation: mymove 5s /*infinite*/;
+	transition: transform 10s;
+}
+.container .content .pic2 p:hover{
+	transform: rotate(180deg);
+}
+
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes mymove {
+    from {left: -400px;}
+    to {left: 100px;}
+}
+.container .content .pic3{
+	position: absolute;
+	top: 350px;
+}
+.container .content .pic3:hover{
+	animation-name: pic;
+	animation-duration: 5s;
+}
+@keyframes pic{
+	0%{left: 0;}
+	25%{left: 0; top: 30px;}
+	50%{left:51%; top: 30px;}
+	75%{left: 51%; top: 350px;}
+	100%{left: 0; bottom: 0;}
+}
+.container .content .pic4{
+	position: absolute;
+	top: 350px;
+	right: 0;
+}
+.container .content .pic4 img:hover{
+	transform: scale(2.04,2.08) translate(-128px,-76px);
+}
+.container .content a{
+	display: block;
+	width: 200px;
+	height: 40px;
+	background: #ff9900;
+	z-index: 10;
+	position: absolute;
+	right: 2px;
+	bottom: -670px;
+	border: 1px solid #ffcc00;
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+.container .box1a {
+	position: absolute;	
+	bottom: 700px;
+	width: 200px;
+	height: 100px;
+	background: blue;
+}
